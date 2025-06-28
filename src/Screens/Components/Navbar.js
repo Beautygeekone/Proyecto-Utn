@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './Navbar.module.css'; 
+import { CiMenuKebab } from "react-icons/ci";
 const Navbar = () => {
     const [NavbarOpen, setNavbarOpen] = React.useState(false);
     const links =[
@@ -28,7 +29,8 @@ const Navbar = () => {
     return ( 
     <div className ={styles.Navbar}>
         <p>Ballerina Capuccina</p>
-       NavbarOpen && 
+        <CiMenuKebab />
+       {NavbarOpen && (
         <ul>
         {links.map(x=> (
             <div>
@@ -36,8 +38,9 @@ const Navbar = () => {
             </div>
         ))}
 </ul>
+       )}
        </div>
     );
-}
+};
 
 export default Navbar;
