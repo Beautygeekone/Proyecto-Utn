@@ -1,5 +1,7 @@
 import React from 'react';
+import styles from './Navbar.module.css'; 
 const Navbar = () => {
+    const [NavbarOpen, setNavbarOpen] = React.useState(false);
     const links =[
         {
             id: 1,
@@ -23,15 +25,19 @@ const Navbar = () => {
         },
 
     ]
-    return <div>
+    return ( 
+    <div className ={styles.Navbar}>
         <p>Ballerina Capuccina</p>
+       NavbarOpen && 
         <ul>
-        {links.map(x => (
+        {links.map(x=> (
             <div>
                 <a href="#">{x.link === "HowWeWork" ? "How we work" : x.link}</a>
             </div>
         ))}
-</ul></div>;
-};
+</ul>
+       </div>
+    );
+}
 
 export default Navbar;
