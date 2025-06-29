@@ -1,7 +1,7 @@
 .Navbar{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     padding: 10px 20px;
-    background-color: #333;
+    background-color: #3a2626c3;
 }
