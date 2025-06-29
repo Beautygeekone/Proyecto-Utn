@@ -16,7 +16,11 @@ const Navbar = () => {
   return (
     <div className={styles.Navbar}>
       <p>Ballerina Capuccina</p>
-      <CiMenuKebab onClick={() => setNavbarOpen(!navbarOpen)} />
+      {!navbarOpen ? ( 
+        <CiMenuKebab onClick={() => setNavbarOpen(true)} size={25} />
+      ) : (
+        <CiMenuKebab onClick={() => setNavbarOpen(false)} size={25} />
+      )} 
       {navbarOpen && (
         <ul>
           {links.map((x) => (
