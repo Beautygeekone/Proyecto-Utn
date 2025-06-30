@@ -1,31 +1,36 @@
 import React from 'react';
 import styles from './Navbar.module.css';
 import { CiMenuKebab } from "react-icons/ci";
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
 
+  // Define rutas con slash "/" para que React Router las interprete bien
   const links = [
-    { id: 1, link: 'Home' },
-    { id: 2, link: 'How We Work' },
-    { id: 3, link: 'Benefits' },
-    { id: 4, link: 'Services' },
-    { id: 5, link: 'Contact' },
+    { id: 1, link: '/home', label: 'Home' },
+    { id: 2, link: '/how-we-work', label: 'How we work' },
+    { id: 3, link: '/benefits', label: 'Benefits' },
+    { id: 4, link: '/services', label: 'Services' },
+    { id: 5, link: '/contact', label: 'Contact' },
   ];
 
   return (
     <div className={styles.Navbar}>
-      <p>Ballerina Capuccina</p>
-      {!navbarOpen ? ( 
-        <CiMenuKebab onClick={() => setNavbarOpen(true)} size={25} />
-      ) : (
-        <CiMenuKebab onClick={() => setNavbarOpen(false)} size={25} />
-      )} 
+      <p className={styles.logo}>Ballerina Capuccina</p>
+
+      <CiMenuKebab
+        onClick={() => setNavbarOpen(!navbarOpen)}
+        size={25}
+      />
+
       {navbarOpen && (
-        <ul>
-          {links.map((x) => (
-            <li key={x.id}>
-              <a href="#">{x.link === "How We Work" ? "How we work" : x.link}</a>
+        <ul className={styles.menu}>
+          {links.map(({ id, link, label }) => (
+            <li key={id} className={styles.navLink}>
+              <Link to={link}>
+                {label}
+              </Link>
             </li>
           ))}
         </ul>
