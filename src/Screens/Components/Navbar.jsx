@@ -3,9 +3,13 @@ import styles from './Navbar.module.css';
 import { CiMenuKebab } from "react-icons/ci";
 import { Link } from 'react-router-dom';
 
+
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
-
+  const [windowDimension, setWindowDimension] = React.useState({
+    width: window.innerWidth,
+    height: window.innerHeight
+  });
   const links = [
     { id: 1, link: '/home', label: 'Home' },
     { id: 2, link: '/how-we-work', label: 'How we work' },
