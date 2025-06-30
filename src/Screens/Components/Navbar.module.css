@@ -1,3 +1,10 @@
+.menu {
+  list-style: none;    /* 👈 Esto elimina los bullets */
+  padding: 0;
+  margin: 0;
+}
+
+
 .Navbar{
     display: flex;
     justify-content: space-evenly;
@@ -6,7 +13,7 @@
     background-color: #3a2626c3;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
-    font-weight: 800; 
+    font-weight: 900; 
     font-size: 1rem;
     margin-left: -20rem;
 }
@@ -18,4 +25,24 @@
     width: 100%;
     background-color: #4a4564;
     flex-direction: column;
+}
+
+.link {
+  font-size: 14px;        
+  color: #333333;         
+  text-decoration: none;
+  font-weight: normal;    
+  padding: 6px 12px;     
+  transition: color 0.3s;
+}
+
+.link:hover {
+  color: #ff3366;          /* Color al pasar el mouse */
+  text-decoration: underline;
+}
+.Navbar a {
+    text-decoration: none;
+    color: rgb(27, 20, 20);
+    font-weight: 300;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }

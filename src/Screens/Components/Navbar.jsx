@@ -6,7 +6,6 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
 
-  // Define rutas con slash "/" para que React Router las interprete bien
   const links = [
     { id: 1, link: '/home', label: 'Home' },
     { id: 2, link: '/how-we-work', label: 'How we work' },
@@ -23,18 +22,18 @@ const Navbar = () => {
         onClick={() => setNavbarOpen(!navbarOpen)}
         size={25}
       />
+{navbarOpen && (
+  <ul className={styles.menu}>
+    {links.map(({ id, link, label }) => (
+      <li key={id} className={styles.navLink}>
+        <Link to={link} className={styles.link}>
+          {label}
+        </Link>
+      </li>
+    ))}
+  </ul>
+)}
 
-      {navbarOpen && (
-        <ul className={styles.menu}>
-          {links.map(({ id, link, label }) => (
-            <li key={id} className={styles.navLink}>
-              <Link to={link}>
-                {label}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      )}
     </div>
   );
 };
