@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './Navbar.module.css';
 import { CiMenuKebab } from "react-icons/ci";
 import { Link } from 'react-router-dom';
+import { useScrollPosition } from '../../Hooks/scrollposition';
 
 
 const Navbar = () => {
@@ -18,26 +19,51 @@ const Navbar = () => {
     { id: 5, link: '/contact', label: 'Contact' },
   ];
 
-  return (
-    <div className={styles.Navbar}>
-      <p className={styles.logo}>Ballerina Capuccina</p>
+ const scrollPosition= useScrollPosition();
 
-      <CiMenuKebab
-        onClick={() => setNavbarOpen(!navbarOpen)}
-        size={25}
-      />
-{navbarOpen && (
-  <ul className={styles.menu}>
-    {links.map(({ id, link, label }) => (
-      <li key={id} className={styles.navLink}>
-        <Link to={link} className={styles.link}>
-          {label}
-        </Link>
-      </li>
-    ))}
-  </ul>
-)}
+ return (
+    <div
+      className={
+        navbarOpen 
+          ? styles.NavbarOpen 
+          : scrollPosition > 0 && windowDimension.width >= 800 
+          ? styles.NavOnScroll 
+          : styles.Navbar 
+      }
+    >
+      
+      {!navbarOpen && <p className={styles.logo}>Ballerina Capuccina</p>}
+      {!navbarOpen && windowDimension.width < 800 && (
+        <CiMenuKebab
+          onClick={() => setNavbarOpen(!navbarOpen)} 
+          size={25}
+          color={scrollPosition > 0 ? 'white' : 'black'} 
+        />
+      )}
 
+      {(navbarOpen || windowDimension.width >= 800) && ( 
+        <>
+          {navbarOpen && windowDimension.width < 800 && (
+            <CiMenuKebab 
+              onClick={() => setNavbarOpen(false)} 
+              color="#f1f1f1" 
+              size={25}
+              style={{ position: 'absolute', top: '20px', right: '20px', cursor: 'pointer' }} 
+            />
+          )}
+
+          
+          <ul className={styles.menu}>
+            {links.map(({ id, link, label }) => (
+              <li key={id} className={styles.navLink} onClick={() => setNavbarOpen(false)}>
+                <Link to={link} className={styles.link}>
+                  {label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </>
+      )}
     </div>
   );
 };
