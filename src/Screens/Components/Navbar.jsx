@@ -13,8 +13,8 @@ const Navbar = () => {
   });
   const links = [
     { id: 1, link: '/home', label: 'Home' },
-    { id: 2, link: '/how-we-work', label: 'How we work' },
-    { id: 3, link: '/benefits', label: 'Benefits' },
+    { id: 2, link: '/Stores', label: 'Stores' },
+    { id: 3, link: '/Products', label: 'Products' },
     { id: 4, link: '/services', label: 'Services' },
     { id: 5, link: '/contact', label: 'Contact' },
   ];
