@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Benefits = () => {
+const Stores = () => {
   return (
     <div></div>
   )
 }
 
-export default Benefits
+export default Stores

@@ -16,3 +16,43 @@
 
 }
 
+.wavySubtitle {
+  width: 90%;
+  max-width: 900px;
+  height: auto;
+  display: block;
+  margin: -1rem auto;
+  position: relative;
+  z-index: 10;
+}
+
+#wavyPath1,
+#wavyPath2 {
+  fill: none;
+  stroke: none;
+}
+
+.svgTextOnPath {
+  font-family: 'Crimson Pro', serif;
+  font-size: 2.5vw;
+  font-weight: 700;
+  fill: #76370b;
+  text-transform: uppercase;
+  text-anchor: middle;
+}
+
+@media (max-width: 1200px) {
+  .svgTextOnPath {
+    font-size: 3vw;
+  }
+}
+
+@media (max-width: 576px) {
+  .svgTextOnPath {
+    font-size: 7vw;
+  }
+}
+.wavySubtitle svg {
+  width: 100%;
+  height: auto;
+}
