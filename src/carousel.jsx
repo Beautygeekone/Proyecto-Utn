@@ -2,12 +2,13 @@ import React, { useState } from 'react';
 
 export default function Carousel() {
   const images = [
-    'https://a.mktgcdn.com/p/Md7GzXa_TYjEWKDYx8Fx90kpwQCvhv1igXfiirTBxP8/600x400.jpg',
+    'https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1047841233%2F221425170783%2F1%2Foriginal.20250606-235309?w=600&auto=format%2Ccompress&q=75&sharp=10&s=0ff834d047329f2daea4f529c2cf19ae',
     'https://static.scientificamerican.com/sciam/cache/file/C59B1FD1-2362-4259-A6D7C0DE2C249D39_source.jpg?w=600',
-    'https://a.mktgcdn.com/p/RjrHSyQRXcmLe8f8F1NIGS3VdGQ52GNbuqMPlF47nH0/600x400.jpg',
+    'https://www.shutterstock.com/image-photo/cup-black-coffee-on-saucer-600nw-2413996125.jpg',
+    'https://blogpackers.com/wp-content/uploads/2024/10/The-Best-Coffee-Packaging-Material.png',
     'https://static.scientificamerican.com/dam/m/609cb41e59a10a9a/original/Two_hands_holding_coffee_drinks.jpg?m=1723477795.996&w=600',
     'https://danes.com.au/cdn/shop/files/essence-of-espresso-barista-course_2048x.jpg?v=1697598454',
-    'https://www.darkstarcoffee.com.au/cdn/shop/files/custom_resized_59378c6f-4a2d-4634-aa5f-b52bf762b745_600x.jpg?v=1639656915',
+    'https://resourceboy.com/wp-content/uploads/2024/05/facing-vision-of-coffee-paper-bag-mockup-thumbnail.jpg',
 ];
   const [index, setIndex] = useState(0);
 
@@ -16,7 +17,7 @@ export default function Carousel() {
   };
 
   return (
-    <div style={{ textAlign: 'center', padding: '20px' }}>
+    <div style={{ textAlign: 'center', padding: '20px' }} className='carousel-container'>
       <img
         src={images[index]}
         alt={`Slide ${index + 1}`}
