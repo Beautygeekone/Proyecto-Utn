@@ -7,8 +7,8 @@ export default function Carousel() {
     'https://a.mktgcdn.com/p/RjrHSyQRXcmLe8f8F1NIGS3VdGQ52GNbuqMPlF47nH0/600x400.jpg',
     'https://static.scientificamerican.com/dam/m/609cb41e59a10a9a/original/Two_hands_holding_coffee_drinks.jpg?m=1723477795.996&w=600',
     'https://danes.com.au/cdn/shop/files/essence-of-espresso-barista-course_2048x.jpg?v=1697598454',
-  ];'https://www.darkstarcoffee.com.au/cdn/shop/files/custom_resized_59378c6f-4a2d-4634-aa5f-b52bf762b745_600x.jpg?v=1639656915',
-
+    'https://www.darkstarcoffee.com.au/cdn/shop/files/custom_resized_59378c6f-4a2d-4634-aa5f-b52bf762b745_600x.jpg?v=1639656915',
+];
   const [index, setIndex] = useState(0);
 
   const next = () => {
