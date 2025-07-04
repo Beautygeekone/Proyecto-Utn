@@ -1,27 +1,27 @@
-import logo from "./logo.svg";
+import React from 'react';
 import './App.css';
-import Benefits from './Screens/Benefits';
-import Contact from './Screens/Contact';
+import Navbar from "./Screens/Components/Navbar";
 import Home from './Screens/Home';
+import Benefits from './Screens/Benefits';
 import HowWeWork from './Screens/HowWeWork';
 import Services from './Screens/Services';
-import Navbar from "./Screens/Components/Navbar";
-
+import Contact from './Screens/Contact';
+import Carousel from './carousel.jsx';  
 
 function App() {
   return (
     <div className="App">
       <Navbar />
       <Home />
+
+      <Carousel /> 
+
       <Benefits />
       <HowWeWork />
       <Services />
       <Contact />
-      
     </div>
   );
 }
 
 export default App;
-
-//41minutos video 
