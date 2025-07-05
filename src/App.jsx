@@ -7,6 +7,7 @@ import HowWeWork from './Screens/products.jsx';
 import Services from './Screens/Services';
 import Contact from './Screens/Contact';
 import Carousel from './carousel.jsx';  
+import Footer from "./Screens/Components/Footer";
 
 function App() {
   return (
@@ -20,9 +21,12 @@ function App() {
       <HowWeWork />
       <Services />
       <Contact />
+      <Footer /> 
     </div>
   );
 }
+
+
 
 export default App;
 
