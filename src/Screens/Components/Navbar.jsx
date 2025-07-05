@@ -3,6 +3,8 @@ import styles from './Navbar.module.css';
 import { CiMenuKebab } from "react-icons/ci";
 import { Link } from 'react-router-dom';
 import { useScrollPosition } from '../../Hooks/scrollposition';
+import { HashLink } from 'react-router-hash-link'; 
+
 
 
 const Navbar = () => {
