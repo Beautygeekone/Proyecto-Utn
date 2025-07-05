@@ -117,7 +117,7 @@
   }
 
 .boton-siguiente {
-  background-color: #f5a346; 
+  background-color: #f5845c; 
   color: white;
   padding: 10px 20px;
   border: none;
@@ -125,6 +125,8 @@
   cursor: pointer;
   font-size: 16px;
   transition: background-color 0.3s ease;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
 }
 
 .boton-siguiente:hover {
