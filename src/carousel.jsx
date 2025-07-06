@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 export default function Carousel() {
   const images = [
-    'https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1047841233%2F221425170783%2F1%2Foriginal.20250606-235309?w=600&auto=format%2Ccompress&q=75&sharp=10&s=0ff834d047329f2daea4f529c2cf19ae',
+    'https://monin.lat/cdn/shop/articles/21031-Monin-Social5337.jpg?v=1727368866&width=600',
     'https://static.scientificamerican.com/sciam/cache/file/C59B1FD1-2362-4259-A6D7C0DE2C249D39_source.jpg?w=600',
     'https://www.shutterstock.com/image-photo/cup-black-coffee-on-saucer-600nw-2413996125.jpg',
     'https://blogpackers.com/wp-content/uploads/2024/10/The-Best-Coffee-Packaging-Material.png',
