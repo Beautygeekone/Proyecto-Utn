@@ -3,7 +3,7 @@ import './App.css';
 import Navbar from "./Screens/Components/Navbar";
 import Home from './Screens/Home';
 import Benefits from './Screens/Stores.jsx';
-import HowWeWork from './Screens/products.jsx';
+import HowWeWork from './Screens/Products.jsx';
 import Services from './Screens/Services';
 import Contact from './Screens/Contact';
 import Carousel from './carousel.jsx';  
