@@ -21,9 +21,10 @@
   max-width: 900px;
   height: auto;
   display: block;
-  margin: -1rem auto;
+  margin: -0.5rem auto;
   position: relative;
   z-index: 10;
+  margin-top: 70px;
 }
 
 #wavyPath1,
@@ -39,6 +40,7 @@
   fill: #76370b;
   text-transform: uppercase;
   text-anchor: middle;
+  
 }
 
 @media (max-width: 1200px) {

@@ -13,18 +13,33 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <Home />
 
-      <Carousel /> 
+      <section id="home">
+        <Home />
+      </section>
 
-      <Benefits />
-      <HowWeWork />
-      <Services />
-      <Contact />
-      <Footer /> 
+      <section id="stores">
+        <Carousel />
+      </section>
+
+      <section id="products">
+        <Benefits />
+      </section>
+
+      <section id="services">
+        <HowWeWork />
+        <Services />
+      </section>
+
+      <section id="contact">
+        <Contact />
+      </section>
+
+      <Footer />
     </div>
   );
 }
+
 
 
 
