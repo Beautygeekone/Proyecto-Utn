@@ -188,3 +188,25 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: bold;
 }
+
+.cafe-1,
+.cafe-2,
+.cafe-3 {
+  width: 100%;            
+  max-width: 407px;      
+  height: auto;          
+  border-radius: 20px;
+  margin: 30px 5px 0 5px;
+}
+
+.texto-servicios{
+  position: relative;
+  top: -50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+  color: #2c2624c9;
+  font-weight: bold;
+  text-align: center;
+  z-index: 10;
+}
