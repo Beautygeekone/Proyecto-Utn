@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Navbar.module.css';
 import { CiMenuKebab } from "react-icons/ci";
-import { useScrollPosition } from '../../Hooks/scrollposition';
+import { useScrollPosition } from '../../Hooks/scrollPosition';
 
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
