@@ -1,11 +1,10 @@
 .home {
-    background: linear-gradient(to right, #858585, #fff0c0);
+    background: linear-gradient(to right, rgba(133, 133, 133, 0.6), rgba(255, 240, 192, 0.6)), url('https://d1pazf0jq96a3d.cloudfront.net/wp-content/uploads/2017/05/21123224/Coffee-Iced-1900x800.jpg') no-repeat center center;
     height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
     padding: 20px 20px 200px; 
-
 }
 
 .home p{
