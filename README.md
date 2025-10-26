@@ -1,3 +1,18 @@
+# ☕ Ballerina Capuccina (Frontend)
+
+**Proyecto Frontend final de la Diplomatura Full Stack de la UTN.**
+
+Diseño web para una cafetería temática. Este repositorio se centra en la capa de presentación y la interacción con el usuario.
+
+### 🚀 Stack Principal
+
+* **JavaScript**
+* **React** 
+* **CSS** 
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
