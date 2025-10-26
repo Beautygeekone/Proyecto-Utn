@@ -1,4 +1,4 @@
-# ☕ Ballerina Capuccina (Frontend)
+## ☕ Ballerina Capuccina (Frontend)
 
 **Proyecto Frontend final de la Diplomatura Full Stack de la UTN.**
 
