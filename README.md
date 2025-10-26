@@ -10,7 +10,7 @@ Diseño web para una cafetería temática. Este repositorio se centra en la capa
 * **React** 
 * **CSS** 
 
-
+  <img src="https://i.postimg.cc/ZqK7Bh9D/ballerina.jpg" alt="preview" style="max-width:100%; height:auto;">
 
 
 # Getting Started with Create React App
