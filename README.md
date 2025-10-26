@@ -4,7 +4,7 @@
 
 Diseño web para una cafetería temática. Este repositorio se centra en la capa de presentación y la interacción con el usuario.
 
-### 🚀 Stack Principal
+### Stack ====>
 
 * **JavaScript**
 * **React** 
